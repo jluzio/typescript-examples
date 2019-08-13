@@ -1,0 +1,12 @@
+
+-- Microsoft Repos with examples and starters --
+Note: repos include step-by-step to build examples
+https://github.com/microsoft/TypeScript-Babel-Starter
+
+https://github.com/microsoft/TypeScript-Vue-Starter
+https://github.com/microsoft/TypeScript-React-Native-Starter
+
+-- Debugging --
+https://code.visualstudio.com/docs/typescript/typescript-debugging
+Required: 
+- tsconfig.json: "sourceMap": true
