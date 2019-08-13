@@ -8,5 +8,9 @@ https://github.com/microsoft/TypeScript-React-Native-Starter
 
 -- Debugging --
 https://code.visualstudio.com/docs/typescript/typescript-debugging
-Required: 
-- tsconfig.json: "sourceMap": true
+Config: 
+> launch.json (node)
+ - "preLaunchTask": "tsc: build - tsconfig.json"
+ - "program": "${file}" (useful)
+> tsconfig.json
+ - "sourceMap": true
