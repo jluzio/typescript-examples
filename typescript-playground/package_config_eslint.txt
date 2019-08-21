@@ -20,9 +20,6 @@
     "@typescript-eslint/eslint-plugin": "^2.0.0",
     "@typescript-eslint/parser": "^2.0.0",
     "eslint": "^6.2.1",
-    "eslint-config-prettier": "^6.1.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "prettier": "^1.18.2",
     "typescript": "^3.5.3"
   },
   "eslintConfig": {
@@ -31,17 +28,13 @@
       "node": true
     },
     "extends": [
-      "plugin:@typescript-eslint/recommended",
-      "prettier/@typescript-eslint",
-      "plugin:prettier/recommended"
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended"
     ],
     "plugins": [
       "@typescript-eslint"
     ],
-    "rules": {
-      "@typescript-eslint/explicit-function-return-type": "off",
-      "@typescript-eslint/no-empty-function": "off"
-    },
+    "rules": {},
     "parserOptions": {
       "parser": "@typescript-eslint/parser"
     }

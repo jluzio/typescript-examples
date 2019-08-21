@@ -1,4 +1,5 @@
 interface Foo {
-    bar: string
+  bar: string;
 }
-let foos: Foo[] = []
+const foos: Foo[] = [];
+const x = "asd ";
