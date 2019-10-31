@@ -9,14 +9,23 @@ console.log(CardsEnum['Hearts'])
 console.log(JSON.stringify(Object.keys(CardsEnum)))
 
 enum CardsEnumConst {
-    Hearts = 'Hearts',
-    Clubs = 'Clubs',
-    Spades = 'Spades',
-    Diamonds = 'Diamonds'
+    Hearts = 'HEARTS',
+    Clubs = 'CLUBS',
+    Spades = 'SPADES',
+    Diamonds = 'DIAMONDS'
 }
+
+const receivesEnum = (val: CardsEnumConst) => {
+    console.log('receivesEnum', {val, eq: val === CardsEnumConst.Clubs})
+}
+
 console.log('CardsEnumConst')
 console.log(CardsEnumConst['Hearts'])
+console.log(CardsEnumConst.Clubs === 'CLUBS')
 console.log(JSON.stringify(Object.keys(CardsEnumConst)))
+
+receivesEnum('CLUB' as CardsEnumConst)
+receivesEnum('CLUBS' as CardsEnumConst)
 
 const CardsObj = {
     Hearts: 'Hearts',
