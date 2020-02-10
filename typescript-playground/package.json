@@ -40,6 +40,14 @@
       "@typescript-eslint"
     ],
     "rules": {
+      "semi": 0,
+      "prettier/prettier": [
+        "error",
+        {
+          "semi": false,
+          "singleQuote": true
+        }
+      ],
       "@typescript-eslint/explicit-function-return-type": "off",
       "@typescript-eslint/no-empty-function": "off"
     },

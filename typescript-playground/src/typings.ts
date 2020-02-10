@@ -1,2 +1,3 @@
-const optNullVar: OptNull<string> = null;
-console.log(optNullVar);
+const optNullVar: OptNull<string> = null
+console.log(optNullVar)
+export {}
