@@ -30,3 +30,23 @@ some_variable == null
 some_variable != null
 Note: Requires that some_variable has been declared, otherwise a ReferenceError will be thrown
 https://stackoverflow.com/questions/2559318/how-to-check-for-an-undefined-or-null-variable-in-javascript
+
+> Typings (.d.ts files)
+Add export {} to make it to a module that will be recognized in project
+
+- ex: app.d.ts
+export {}
+
+declare global {
+  type Optional<T> = T | undefined
+  type Nullable<T> = T | null
+  type OptNull<T> = T | undefined | null
+  type DateType = string | Date | Moment
+  type PreciseNumberType = number | string | Big
+  type ValueListener<T> = (value: T) => void
+  type Predicate<T> = (v: T) => boolean
+
+  type NestedPartial<T> = {
+    [P in keyof T]?: NestedPartial<T[P]>
+  }
+}
